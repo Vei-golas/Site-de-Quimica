@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="classificacao.html">Classificação e Nomenclatura</a>
+        <a href="calculos.html">Cálculos e Concentração</a>
+        <a href="reacoes.html">Reações e Neutralização</a>
+        <a href="quiz.html">Quiz</a>
+    </nav>
+
+    <main>
+
+        <section>
+
+            <section>
+
+    <h2>Classificação e nomenclatura das bases</h2>
+
+    <div class="destaque-inicio">
+
+        <img src="imagens/Classificação das bases.png" alt="classificação e nomenclatura">
+
+        <div class="texto-destaque">
+
+            <h3>Como nomear uma base</h3>
+            
+            <p><strong>Hidróxido de + Nome do cátion</strong></p>
+            <p>Exemplos: NaOH = hidróxido de sódio; Ca(OH)2 = hidróxido de cálcio; Al(OH)3 = hidróxido de alumínio.</p>
+            <p>Se um metal puder apresentar cargas diferentes, indica-se o número de oxidação em algarismos
+            romanos: Fe(OH)2 = hidróxido de ferro(II); Fe(OH)3 = hidróxido de ferro(III).</p>
+
+        </div>
+
+    </div>
+
+    <!-- O restante do conteúdo da página continua aqui -->
+
+            <!-- EIXO E ALIADOS -->
+
+            <div class="blocos-guerra">
+
+                <button class="bloco-guerra" onclick="mostrarBlocoGuerra('eixo')">
+                    <h3>Hidroxilas (OH)</h3>
+
+                    <p>
+                        Como contar
+                    </p>
+
+                    <span>Clique para saber mais</span>
+                </button>
+
+                <div class="seta-guerra">
+                    →
+                </div>
+
+                <button class="bloco-guerra" onclick="mostrarBlocoGuerra('aliados')">
+                    <h3>Solubilidade</h3>
+
+                    <p>
+                        Classificação
+                    </p>
+
+                    <span>Clique para saber mais</span>
+                </button>
+
+            </div>
+
+            <!-- CONTEÚDO DO EIXO -->
+
+            <div id="eixo" class="conteudo-guerra">
+
+                <h3>Como contar hidroxilas?</h3>
+
+                <p>
+                    Observe o índice depois do grupo (OH). Em Al(OH)3, o índice 3 indica três hidroxilas: é uma tribase. Em
+                    NaOH, sem índice explícito, há uma hidroxila: é uma monobase.
+                </p>
+
+                <p>
+                    A contagem corresponde aos grupos OH presentes na unidade de fórmula, e não ao número de átomos
+                    de oxigênio isoladamente.
+                </p>
+
+            </div>
+
+            <!-- CONTEÚDO DOS ALIADOS -->
+
+            <div id="aliados" class="conteudo-guerra">
+
+                <h3>Classificação quanto à solubilidade</h3>
+
+                <p>
+                    A solubilidade é a capacidade de uma substância se dissolver em água. As bases podem ser classificadas de acordo 
+                    com a quantidade que se dissolve nesse líquido.
+                </p>
+                <p><strong>Bases solúveis</strong></p>
+                <p> São aquelas que se dissolvem bem em água. Em geral, as bases dos metais alcalinos, como sódio e potássio, são solúveis.</p>
+                <p><strong>Bases pouco solúveis</strong></p>
+                <p>São aquelas que se dissolvem apenas em pequenas quantidades na água.</p>
+                <p><strong>Bases praticamente insolúveis</strong></p>
+                <p>São aquelas que apresentam solubilidade muito baixa em água.</p>
+
+            </div>
+
+            <!-- LINHA DO TEMPO -->
+
+            <div class="linha-tempo">
+
+                <h3>Classificação das bases</h3>
+
+                <div class="anos">
+
+                    <button onclick="mostrarAno('ano1939', this)">
+                        1 OH
+                    </button>
+
+                    <button onclick="mostrarAno('ano1941', this)">
+                        2 OH
+                    </button>
+
+                    <button onclick="mostrarAno('ano1942', this)">
+                        3 OH
+                    </button>
+
+                    <button onclick="mostrarAno('ano1944', this)">
+                        4 OH
+                    </button>
+
+                </div>
+
+                <!-- 1939 -->
+
+                <div id="ano1939" class="evento">
+
+                    <h4>Monobase</h4>
+                    <p>Apresenta apenas uma hidroxila na composição</p>
+                    <p>NaOH, KOH, LiOH</p>
+
+                </div>
+
+                <!-- 1941 -->
+
+                <div id="ano1941" class="evento">
+
+                    <h4>Dibase</h4>
+
+                    <p>Apresenta duas hidroxilas na composição</p>
+                    <p>Ca(OH)2, Mg(OH)2, Ba(OH)2</p>
+
+                </div>
+
+                <!-- 1942-1943 -->
+
+                <div id="ano1942" class="evento">
+
+                    <h4>Tribase</h4>
+
+                    <p>Apresenta três hidroxilas na composição</p>
+                    <p>Al(OH)3, Fe(OH)3</p>
+
+                </div>
+
+                <!-- 1944 -->
+
+                <div id="ano1944" class="evento">
+
+                    <h4>Tetrabase</h4>
+
+                    <p>Apresenta quatro hidroxilas na composição</p>
+                    <p>Sn(OH)4</p>
+
+                </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Projeto de química
+        </p>
+
+        <p>
+            Colégio São Luiz - 3ºB - Isabella Astor, João Victor, Vinicius Costa, Kelry Monique, Maria Vitória
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
